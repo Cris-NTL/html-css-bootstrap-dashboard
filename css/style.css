@@ -19,11 +19,11 @@ body {
 /* // common rules */
 
 /* specific rules */
-header {
+/* header { */
     /* debug */
-    background-color: lightcoral;
+    /* background-color: lightcoral; */
     /* // debug */
-}   
+/* }    */
 
 aside {
     background-image: url(/img/sidebar-bg.png);
@@ -47,10 +47,11 @@ aside {
 .jumbo {
     /* debug */
     background-color: var(--jumbo);
+    color: var(--default);
     /* // debug */
 }
 
-.col {
+/* .col {
     border: 1px solid black;
-}
+} */
 /* // specific rules */
