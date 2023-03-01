@@ -3,3 +3,54 @@ img {
     max-width: 100%;
 }
 /* // reset */
+
+/* utility */
+:root {
+    --default:#ffffff;
+    --side: #051E34;
+    --jumbo: #1B72E8;
+    --mc-bg: #F8F9FA;
+}
+/* // utility */
+/* common rules */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+/* // common rules */
+
+/* specific rules */
+header {
+    /* debug */
+    background-color: lightcoral;
+    /* // debug */
+}   
+
+aside {
+    background-image: url(/img/sidebar-bg.png);
+    background-color: var(--side);
+    color: var(--default);
+}
+
+/* .central-body { */
+    /* debug */
+    /* height: 100vh; */
+    /* // debug */
+/* } */
+
+.main-content {
+    /* debug */
+    background-color: var(--mc-bg);
+    /* height: 100vh; */
+    /* // debug */
+}
+
+.jumbo {
+    /* debug */
+    background-color: var(--jumbo);
+    /* // debug */
+}
+
+.col {
+    border: 1px solid black;
+}
+/* // specific rules */

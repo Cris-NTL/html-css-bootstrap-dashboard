@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,40 +11,156 @@
     <!-- link mediaquery css -->
     <link rel="stylesheet" href="css/mediaquery.css">
     <!-- link bootstrap css -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- link google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- link icons bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 </head>
-<body>
-    <div class="wrapper d-flex">
-        <!-- header -->
-        <header>
 
+<body>
+    <div class="wrapper h-100 d-flex flex-column">
+        <!-- header -->
+        <header class="d-flex flex-row justify-content-between">
+            <div class="p-3">
+                <img src="img/logo.svg" alt="logo-boolean">
+            </div>
+            <div class="p-3">
+
+            </div>
+            <div class="p-3">
+                <i class="bi bi-bell-fill"></i>
+            </div>
         </header>
         <!-- // header -->
 
-        <!-- sidebar -->
-        <aside>
+        <!-- central body -->
+        <section class="central-body d-flex flex-row">
+            <!-- sidebar -->
+            <aside class="py-3 col-1 d-flex flex-column justify-content-between align-items-center">
+                <div class="menu d-flex flex-column">
+                    <i class="bi bi-house-fill"></i>
+                    <i class="bi bi-bar-chart-fill"></i>
+                    <i class="bi bi-reception-4"></i>
+                </div>
 
-        </aside>
-        <!-- // sidebar -->
+                <div class="settings">
+                    <i class="bi bi-gear-fill"></i>
+                </div>
+            </aside>
+            <!-- // sidebar -->
 
-        <!-- body -->
-        <section class="body">
-            <!-- jumbotron -->
-            <div class="jumbotron">
-                
-            </div>
-            <!-- jumbotron -->
+            <!-- main content section -->
+            <section class="main d-flex flex-column">
+                <!-- jumbotron -->
+                <div class="container jumbo d-flex flex-column py-3">
+                    <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi, est!</div>
+                    <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi, est!</div>
+                    <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi, est!</div>
+                </div>
+                <!-- jumbotron -->
 
-            <!-- main section -->
-            <div class="main-content">
+                <!-- content section -->
+                <div class="container main-content py-3">
+                    <div class="row d-flex flex-column">
+                        <div class="col">
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-header">
+                                        Prossime classi
+                                    </div>
+                                    <div class="card-body">
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">#</th>
+                                                    <th scope="col">First</th>
+                                                    <th scope="col">Last</th>
+                                                    <th scope="col">Handle</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">1</th>
+                                                    <td>Mark</td>
+                                                    <td>Otto</td>
+                                                    <td>@mdo</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">2</th>
+                                                    <td>Jacob</td>
+                                                    <td>Thornton</td>
+                                                    <td>@fat</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">3</th>
+                                                    <td colspan="2">Larry the Bird</td>
+                                                    <td>@twitter</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
 
-            </div>
-            <!-- // main section -->
+                            <div class="col">
+                                <div class="card-header">
+                                    F.A.Q
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Special title treatment</h5>
+                                    <p class="card-text">With supporting text below as a natural lead-in to
+                                        additional content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="col">
+                                <div class="card-header">
+                                    To do:
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Special title treatment</h5>
+                                    <p class="card-text">With supporting text below as a natural lead-in to
+                                        additional content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <img src="img/stats.jpeg" class="card-img-top" alt="statistics">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the card's content.</p>
+                                    </div>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">An item</li>
+                                        <li class="list-group-item">A second item</li>
+                                        <li class="list-group-item">A third item</li>
+                                    </ul>
+                                    <div class="card-body">
+                                        <a href="#" class="card-link">Card link</a>
+                                        <a href="#" class="card-link">Another link</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- // content section -->
+            </section>
+            <!-- // main content section -->
         </section>
-        <!-- // body -->
+        <!-- // central body -->
     </div>
-    
+
 
 
 
@@ -51,9 +168,16 @@
 
 
     <!-- javascript -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>    
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
     <!-- // javascript -->
 </body>
+
 </html>
