@@ -24,44 +24,73 @@
 </head>
 
 <body>
-    <div class="wrapper h-100 d-flex flex-column">
+    <div class="wrapper d-flex flex-column">
         <!-- header -->
-        <header class="d-flex flex-row justify-content-between">
-            <div class="p-3">
-                <img src="img/logo.svg" alt="logo-boolean">
-            </div>
-            <div class="p-3">
-
-            </div>
-            <div class="p-3">
-                <i class="bi bi-bell-fill"></i>
+        <header>
+            <div class="ms-width px-3 row d-flex flex-row justify-content-between align-items-center">
+                <div class="p-2 col-auto">
+                    <img class="d-lg-none" src="img/mobile-logo.png" alt="logo-boolean">
+                    <img class="d-none d-lg-block" src="img/logo.svg" alt="large-boolean-logo">
+                </div>
+                <div class="p-2 col-auto">
+                    <form class="flex-grow-1" role="search">
+                        <div class="input-group">
+                            <span class="input-group-text" id="basic-addon1"><i class="bi bi-search"></i></span>
+                            <input type="search" class="form-control ms_header-search" placeholder="Search"
+                                aria-label="Search" aria-describedby="basic-addon1">
+                        </div>
+                    </form>
+                </div>
+                <div class="p-2 col-auto">
+                    <i class="bi bi-bell-fill"></i>
+                </div>
             </div>
         </header>
         <!-- // header -->
 
         <!-- central body -->
-        <section class="central-body d-flex flex-row">
+        <section class="main-body d-flex flex-row">
             <!-- sidebar -->
-            <aside class="py-3 col-1 d-flex flex-column justify-content-between align-items-center">
-                <div class="menu d-flex flex-column">
-                    <i class="bi bi-house-fill"></i>
-                    <i class="bi bi-bar-chart-fill"></i>
-                    <i class="bi bi-reception-4"></i>
-                </div>
-
-                <div class="settings">
-                    <i class="bi bi-gear-fill"></i>
-                </div>
+            <aside>
+                <nav class="py-3 d-flex flex-column justify-content-between align-items-center">
+                    <div class="menu d-flex flex-column">
+                        <i class="bi bi-house-fill"></i>
+                        <i class="bi bi-bar-chart-fill"></i>
+                        <i class="bi bi-reception-4"></i>
+                    </div>
+                    <div class="settings">
+                        <i class="bi bi-gear-fill"></i>
+                    </div>
+                </nav>
             </aside>
             <!-- // sidebar -->
 
             <!-- main content section -->
-            <section class="main d-flex flex-column">
+            <section class="main d-flex flex-column overflow-y-auto">
                 <!-- jumbotron -->
-                <div class="container jumbo d-flex flex-column py-3">
-                    <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi, est!</div>
-                    <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi, est!</div>
-                    <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi, est!</div>
+                <div class="container">
+                    <div class="row jumbo d-flex flex-column p-3">
+                        <div>
+                            <span>Nuovo Studente</span>
+                            <i class="bi bi-plus-square"></i>
+                        </div>
+                        <div class="ms-title py-3">
+                            <div class="d-flex align-items-center">
+                                <h1>Boolean</h1>
+                                <span class="ms-bg">Piano blaze</span>
+                            </div>
+                            <span class="ms-bg">3 app</span>
+                            <span><i class="bi bi-fast-forward-fill"></i></span>
+                            <span class="ms-bg"><i class="bi bi-plus-lg"></i></span>
+                            <span class="ms-bg">Boolean mobile app</span>
+                            <span class="ms-bg">Boolean web app</span>
+                            <span class="ms-bg">Boolean blog app</span>
+                        </div>
+                        <div>
+                            <span>Studenti online negli utlimi 30 minuti</span><br>
+                            <span>125</span>
+                        </div>
+                    </div>
                 </div>
                 <!-- jumbotron -->
 
@@ -69,191 +98,250 @@
                 <div class="container main-content py-3">
                     <div class="row d-flex flex-column">
                         <div class="col">
-                            <div class="col">                    
 
-                                <!-- first card -->
-                                <div class="card">
-                                    <div class="card-header">
-                                        Prossime classi
-                                    </div>
-                                    <div class="card-body">
-                                        <table class="table">
-                                            <thead>
-                                                <tr>
-                                                    <th scope="col">Nome</th>
-
-                                                    <th scope="col">Data inizio</th>
-                                                    <th scope="col">ROI</th>
-                                                    <th scope="col">Stato</th>
-                                                    <th scope="col">Azioni</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <th scope="row">1</th>
-                                                    <td>Mark</td>
-                                                    <td>Otto</td>
-                                                    <td>@mdo</td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">2</th>
-                                                    <td>Jacob</td>
-                                                    <td>Thornton</td>
-                                                    <td>@fat</td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">3</th>
-                                                    <td colspan="2">Larry the Bird</td>
-                                                    <td>@twitter</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                                <!-- // first card -->
-                            </div>
-
-                            <!-- second card -->
-                            <div class="col">
+                            <!-- first card -->
+                            <div class="card">
                                 <div class="card-header">
-                                    F.A.Q
+                                    Prossime classi
                                 </div>
                                 <div class="card-body">
-                                    <!-- accordion -->
-                                    <div id="accordion">
-                                        <div class="card">
-                                            <div class="card-header" id="headingOne">
-                                                <h5 class="mb-0">
-                                                    <button class="btn btn-link" data-toggle="collapse"
-                                                        data-target="#collapseOne" aria-expanded="true"
-                                                        aria-controls="collapseOne">
-                                                        Collapsible Group Item #1
-                                                    </button>
-                                                </h5>
-                                            </div>
+                                    <!-- table -->
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Nome</th>
+                                                <th scope="col">Data inizio</th>
+                                                <th scope="col">ROI</th>
+                                                <th scope="col">Stato</th>
+                                                <th scope="col">Azioni</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th class="d-flex" scope="row">Classe 75</th>
+                                                <td>15 Febbraio 2021</td>
+                                                <td>20%</td>
+                                                <td>Done</td>
+                                                <td class="d-flex">
+                                                    <button class="btn"><i class="bi bi-pencil"></i></i></button>
+                                                    <button class="btn"><i class="bi bi-trash-fill"></i></button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th class="d-flex" scope="row">Classe 76</th>
+                                                <td>16 Febbraio 2021</td>
+                                                <td>20%</td>
+                                                <td>Done</td>
+                                                <td class="d-flex">
+                                                    <button class="btn"><i class="bi bi-pencil"></i></i></button>
+                                                    <button class="btn"><i class="bi bi-trash-fill"></i></button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th class="d-flex" scope="row">Classe 77</th>
+                                                <td>17 Febbraio 2021</td>
+                                                <td>20%</td>
+                                                <td>Process</td>
+                                                <td class="d-flex">
+                                                    <button class="btn"><i class="bi bi-pencil"></i></i></button>
+                                                    <button class="btn"><i class="bi bi-trash-fill"></i></button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th class="d-flex" scope="row">Classe 78</th>
+                                                <td>18 Febbraio 2021</td>
+                                                <td>20%</td>
+                                                <td>Done</td>
+                                                <td class="d-flex">
+                                                    <button class="btn"><i class="bi bi-pencil"></i></i></button>
+                                                    <button class="btn"><i class="bi bi-trash-fill"></i></button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th class="d-flex" scope="row">Classe 79</th>
+                                                <td>19 Febbraio 2021</td>
+                                                <td>20%</td>
+                                                <td>Failed</td>
+                                                <td class="d-flex">
+                                                    <button class="btn"><i class="bi bi-pencil"></i></i></button>
+                                                    <button class="btn"><i class="bi bi-trash-fill"></i></button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th class="d-flex" scope="row">Classe 80</th>
+                                                <td>20 Febbraio 2021</td>
+                                                <td>20%</td>
+                                                <td>Done</td>
+                                                <td class="d-flex">
+                                                    <button class="btn"><i class="bi bi-pencil"></i></i></button>
+                                                    <button class="btn"><i class="bi bi-trash-fill"></i></button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th class="d-flex" scope="row">Classe 81</th>
+                                                <td>21 Febbraio 2021</td>
+                                                <td>20%</td>
+                                                <td>Failed</td>
+                                                <td class="d-flex">
+                                                    <button class="btn"><i class="bi bi-pencil"></i></i></button>
+                                                    <button class="btn"><i class="bi bi-trash-fill"></i></button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th class="d-flex" scope="row">Classe 82</th>
+                                                <td>22 Febbraio 2021</td>
+                                                <td>20%</td>
+                                                <td>Done</td>
+                                                <td class="d-flex">
+                                                    <button class="btn"><i class="bi bi-pencil"></i></i></button>
+                                                    <button class="btn"><i class="bi bi-trash-fill"></i></button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <!-- table -->
+                                </div>
+                            </div>
+                            <!-- // first card -->
 
-                                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
-                                                data-parent="#accordion">
-                                                <div class="card-body">
-                                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
-                                                    terry richardson ad squid. 3 wolf moon officia aute, non cupidatat
-                                                    skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
-                                                    Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
-                                                    single-origin coffee nulla assumenda shoreditch et. Nihil anim
-                                                    keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
-                                                    sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
-                                                    occaecat craft beer farm-to-table, raw denim aesthetic synth
-                                                    nesciunt you probably haven't heard of them accusamus labore
-                                                    sustainable VHS.
-                                                </div>
-                                            </div>
+                            <!-- second card -->
+                            <div class="card-header">
+                                F.A.Q
+                            </div>
+                            <div class="card-body">
+                                <!-- accordion -->
+                                <div id="accordion">
+                                    <div class="card">
+                                        <div class="card-header" id="headingOne">
+                                            <h5 class="mb-0">
+                                                <button class="btn btn-link" data-toggle="collapse"
+                                                    data-target="#collapseOne" aria-expanded="true"
+                                                    aria-controls="collapseOne">
+                                                    Come aggiungere un nuovo studente?
+                                                </button>
+                                            </h5>
                                         </div>
-                                        <div class="card">
-                                            <div class="card-header" id="headingTwo">
-                                                <h5 class="mb-0">
-                                                    <button class="btn btn-link collapsed" data-toggle="collapse"
-                                                        data-target="#collapseTwo" aria-expanded="false"
-                                                        aria-controls="collapseTwo">
-                                                        Collapsible Group Item #2
-                                                    </button>
-                                                </h5>
-                                            </div>
-                                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
-                                                data-parent="#accordion">
-                                                <div class="card-body">
-                                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
-                                                    terry richardson ad squid. 3 wolf moon officia aute, non cupidatat
-                                                    skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
-                                                    Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
-                                                    single-origin coffee nulla assumenda shoreditch et. Nihil anim
-                                                    keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
-                                                    sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
-                                                    occaecat craft beer farm-to-table, raw denim aesthetic synth
-                                                    nesciunt you probably haven't heard of them accusamus labore
-                                                    sustainable VHS.
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="card">
-                                            <div class="card-header" id="headingThree">
-                                                <h5 class="mb-0">
-                                                    <button class="btn btn-link collapsed" data-toggle="collapse"
-                                                        data-target="#collapseThree" aria-expanded="false"
-                                                        aria-controls="collapseThree">
-                                                        Collapsible Group Item #3
-                                                    </button>
-                                                </h5>
-                                            </div>
-                                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
-                                                data-parent="#accordion">
-                                                <div class="card-body">
-                                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
-                                                    terry richardson ad squid. 3 wolf moon officia aute, non cupidatat
-                                                    skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
-                                                    Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
-                                                    single-origin coffee nulla assumenda shoreditch et. Nihil anim
-                                                    keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
-                                                    sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
-                                                    occaecat craft beer farm-to-table, raw denim aesthetic synth
-                                                    nesciunt you probably haven't heard of them accusamus labore
-                                                    sustainable VHS.
-                                                </div>
+
+                                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                            data-parent="#accordion">
+                                            <div class="card-body">
+                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
+                                                terry richardson ad squid. 3 wolf moon officia aute, non cupidatat
+                                                skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                                                Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+                                                single-origin coffee nulla assumenda shoreditch et. Nihil anim
+                                                keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                                                sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
+                                                occaecat craft beer farm-to-table, raw denim aesthetic synth
+                                                nesciunt you probably haven't heard of them accusamus labore
+                                                sustainable VHS.
                                             </div>
                                         </div>
                                     </div>
-                                    <!-- // accordion -->
+                                    <div class="card">
+                                        <div class="card-header" id="headingTwo">
+                                            <h5 class="mb-0">
+                                                <button class="btn btn-link collapsed" data-toggle="collapse"
+                                                    data-target="#collapseTwo" aria-expanded="false"
+                                                    aria-controls="collapseTwo">
+                                                    Come posso accedere alle informazioni del mio account?
+                                                </button>
+                                            </h5>
+                                        </div>
+                                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                            data-parent="#accordion">
+                                            <div class="card-body">
+                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
+                                                terry richardson ad squid. 3 wolf moon officia aute, non cupidatat
+                                                skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                                                Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+                                                single-origin coffee nulla assumenda shoreditch et. Nihil anim
+                                                keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                                                sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
+                                                occaecat craft beer farm-to-table, raw denim aesthetic synth
+                                                nesciunt you probably haven't heard of them accusamus labore
+                                                sustainable VHS.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="headingThree">
+                                            <h5 class="mb-0">
+                                                <button class="btn btn-link collapsed" data-toggle="collapse"
+                                                    data-target="#collapseThree" aria-expanded="false"
+                                                    aria-controls="collapseThree">
+                                                    Posso usare questa dashboard da mobile?
+                                                </button>
+                                            </h5>
+                                        </div>
+                                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                            data-parent="#accordion">
+                                            <div class="card-body">
+                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
+                                                terry richardson ad squid. 3 wolf moon officia aute, non cupidatat
+                                                skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                                                Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+                                                single-origin coffee nulla assumenda shoreditch et. Nihil anim
+                                                keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                                                sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
+                                                occaecat craft beer farm-to-table, raw denim aesthetic synth
+                                                nesciunt you probably haven't heard of them accusamus labore
+                                                sustainable VHS.
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
+                                <!-- // accordion -->
                             </div>
                             <!-- // second card -->
                         </div>
-                        
+
                         <!-- third card -->
                         <div class="col">
-                            <div class="col">
-                                <div class="card-header">
-                                    To do:
-                                </div>
-                                <div class="card-body">
-                                    <!-- input list -->
-                                    <ul class="list-group">
-                                        <li class="list-group-item">
-                                            <input class="form-check-input me-1" type="checkbox" value=""
-                                                id="firstCheckbox">
-                                            <label class="form-check-label" for="firstCheckbox">First checkbox</label>
-                                        </li>
-                                        <li class="list-group-item">
-                                            <input class="form-check-input me-1" type="checkbox" value=""
-                                                id="secondCheckbox">
-                                            <label class="form-check-label" for="secondCheckbox">Second checkbox</label>
-                                        </li>
-                                        <li class="list-group-item">
-                                            <input class="form-check-input me-1" type="checkbox" value=""
-                                                id="thirdCheckbox">
-                                            <label class="form-check-label" for="thirdCheckbox">Third checkbox</label>
-                                        </li>
-                                    </ul>
-                                    <!-- input list -->
-                                </div>
+                            <div class="card-header">
+                                To do:
+                            </div>
+                            <div class="card-body">
+                                <!-- input list -->
+                                <ul class="list-group">
+                                    <li class="list-group-item">
+                                        <input class="form-check-input me-1" type="checkbox" value=""
+                                            id="firstCheckbox">
+                                        <label class="form-check-label" for="firstCheckbox">Kickoff nuove
+                                            classi</label>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <input class="form-check-input me-1" type="checkbox" value=""
+                                            id="secondCheckbox">
+                                        <label class="form-check-label" for="secondCheckbox">Lezione su Bootstrap in
+                                            classe #75</label>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <input class="form-check-input me-1" type="checkbox" value=""
+                                            id="thirdCheckbox">
+                                        <label class="form-check-label" for="thirdCheckbox">Controllare username
+                                            github studenti</label>
+                                    </li>
+                                </ul>
+                                <!-- input list -->
                             </div>
 
                             <!-- fourth card -->
-                            <div class="col">
-                                <div class="card">
-                                    <img src="img/stats.jpeg" class="card-img-top" alt="statistics">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make
-                                            up the bulk of the card's content.</p>
-                                    </div>
-                                    <ul class="list-group list-group-flush">
-                                        <li class="list-group-item">An item</li>
-                                        <li class="list-group-item">A second item</li>
-                                        <li class="list-group-item">A third item</li>
-                                    </ul>
-                                    <div class="card-body">
-                                        <a href="#" class="card-link">Card link</a>
-                                        <a href="#" class="card-link">Another link</a>
-                                    </div>
+                            <div class="card">
+                                <img src="img/stats.jpeg" class="card-img-top" alt="statistics">
+                                <div class="card-body">
+                                    <h5 class="card-title">Utenti attivi</h5>
+                                    <p class="card-text">Lista degli utenti attivi in piattaforma nell'ultimo mese
+                                    </p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item"></li>
+                                    <li class="list-group-item">Gennaio: 1200</li>
+                                    <li class="list-group-item">Febbraio: 800</li>
+                                    <li class="list-group-item">Marzo: 1500</li>
+                                </ul>
+                                <div class="card-body">
+                                    <a href="#" class="card-link">Visualizza report approfondito</a>
                                 </div>
                             </div>
                             <!-- // fourth card -->

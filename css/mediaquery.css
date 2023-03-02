@@ -1,0 +1,17 @@
+/* md <= 768px */
+@media screen and (max-width: 768px) {
+    .ms-title span:nth-child(5) {
+        display: none;
+    }
+    .ms-title span:nth-child(6) {
+        display: none;
+    }
+    .ms-title span:nth-child(7) {
+        display: none;
+    }
+}
+
+/* md => 768px */
+@media screen and (min-width: 768px) {
+    
+}

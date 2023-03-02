@@ -10,6 +10,10 @@ img {
     --side: #051E34;
     --jumbo: #1B72E8;
     --mc-bg: #F8F9FA;
+    --bg-btn: #165BBA;
+
+    --as-size: 3.5rem;
+    --hd-size: 3.5rem;
 }
 /* // utility */
 /* common rules */
@@ -19,39 +23,80 @@ body {
 /* // common rules */
 
 /* specific rules */
-/* header { */
-    /* debug */
-    /* background-color: lightcoral; */
-    /* // debug */
-/* }    */
+header {
+    height: var(--hd-size);
+}   
 
+.ms-width {
+    width: 100%;
+}
 aside {
     background-image: url(/img/sidebar-bg.png);
     background-color: var(--side);
     color: var(--default);
+    width: var(--as-size);
 }
 
-/* .central-body { */
-    /* debug */
-    /* height: 100vh; */
-    /* // debug */
-/* } */
+aside nav {
+    height: 100%;
+}
+.wrapper {
+    width: 100%;
+    height: 100%;
+}
 
 .main-content {
-    /* debug */
     background-color: var(--mc-bg);
-    /* height: 100vh; */
-    /* // debug */
 }
 
 .jumbo {
-    /* debug */
     background-color: var(--jumbo);
     color: var(--default);
-    /* // debug */
 }
 
-/* .col {
-    border: 1px solid black;
-} */
+.main {
+    width: calc(100% - (--as-size));
+    height: 100%;
+}
+
+.ms-bg {
+    background-color: var(--bg-btn);
+    padding: 0.2rem 0.5rem;
+    border-radius: 25px 25px;
+}
+
+.ms-title *:not(:last-child) {
+    margin-right: 0.5rem;
+}
+
+.p-2 img {
+    width: 40px;
+}
+
+.form-control{
+    background-color: #E5E5E5;
+}
+
+.ms_header-search.form-control:focus{
+    border-color: transparent;
+    box-shadow: none;
+}
+header .input-group-text{
+    background-color: #E5E5E5;
+}
+
+tbody th::before {
+    content: "";
+    background-image: url(/img/class-avatar.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 45px;
+    height: 45px;
+    display: block;
+    margin-right: 10px;
+    align-self: center;
+}
 /* // specific rules */
+
+                 
