@@ -11,7 +11,11 @@ img {
     --jumbo: #1B72E8;
     --mc-bg: #F8F9FA;
     --bg-btn: #165BBA;
-
+    --done: #198754;
+    --process: #FFC107;
+    --failed: #DC3545;
+    --btn: #6C757D;
+    
     --as-size: 3.5rem;
     --hd-size: 3.5rem;
 }
@@ -24,8 +28,16 @@ body {
 
 /* specific rules */
 header {
+    position: fixed;
+    width: 100%;
     height: var(--hd-size);
+    z-index: 1;
+    background-color: var(--default);
 }   
+
+header .input-group-text{
+    background-color: #E5E5E5;
+}
 
 .ms-width {
     width: 100%;
@@ -45,6 +57,9 @@ aside nav {
     height: 100%;
 }
 
+.ms-main-body {
+    margin-top: 3.5rem;
+}
 .main-content {
     background-color: var(--mc-bg);
 }
@@ -55,7 +70,7 @@ aside nav {
 }
 
 .main {
-    width: calc(100% - (--as-size));
+    width: calc(100% - var(--as-size));
     height: 100%;
 }
 
@@ -81,9 +96,6 @@ aside nav {
     border-color: transparent;
     box-shadow: none;
 }
-header .input-group-text{
-    background-color: #E5E5E5;
-}
 
 tbody th::before {
     content: "";
@@ -96,6 +108,41 @@ tbody th::before {
     display: block;
     margin-right: 10px;
     align-self: center;
+}
+
+#ms-border {
+    border-top: 0;
+    vertical-align: middle;
+    justify-content: center;
+}
+
+.ms_done {
+    background-color: var(--done);
+}
+
+.ms_process {
+    background-color: var(--process);
+}
+
+.ms_failed {
+    background-color: var(--failed);
+}
+
+.badge {
+    color: var(--default);
+}
+
+#btn {
+    color: var(--btn);
+    border: 2px solid;
+}
+
+tr td:nth-child(2) {
+    font-weight: bold;
+}
+
+tr td:nth-child(3) {
+    font-weight: bold;
 }
 /* // specific rules */
 
