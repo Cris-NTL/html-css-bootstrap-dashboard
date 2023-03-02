@@ -96,7 +96,7 @@
 
                 <!-- content section -->
                 <div class="container main-content py-3">
-                    <div class="row d-flex flex-column">
+                    <div class="ms-wrap row d-flex flex-column">
                         <div class="col">
 
                             <!-- first card -->
@@ -246,13 +246,14 @@
                                     <div id="accordion">
                                         <div class="card">
                                             <div class="card-header" id="headingOne">
-                                                <h5 class="mb-0">
-                                                    <button class="btn btn-link" data-toggle="collapse"
+                                                <div class="mb-0">
+                                                    <button class="btn btn-link d-flex" data-toggle="collapse"
                                                         data-target="#collapseOne" aria-expanded="true"
                                                         aria-controls="collapseOne">
-                                                        Come aggiungere un nuovo studente?
+                                                        <h6>Come aggiungere un nuovo studente?</h6>
+                                                        <i class="bi bi-chevron-down"></i>
                                                     </button>
-                                                </h5>
+                                                </div>
                                             </div>
 
                                             <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
@@ -273,13 +274,14 @@
                                         </div>
                                         <div class="card">
                                             <div class="card-header" id="headingTwo">
-                                                <h5 class="mb-0">
-                                                    <button class="btn btn-link collapsed" data-toggle="collapse"
+                                                <div class="mb-0">
+                                                    <button class="btn btn-link collapsed d-flex" data-toggle="collapse"
                                                         data-target="#collapseTwo" aria-expanded="false"
                                                         aria-controls="collapseTwo">
-                                                        Come posso accedere alle informazioni del mio account?
+                                                        <h6>Come posso accedere alle informazioni del mio account?</h6>
+                                                        <i class="bi bi-chevron-down"></i>
                                                     </button>
-                                                </h5>
+                                                </div>
                                             </div>
                                             <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
                                                 data-parent="#accordion">
@@ -299,13 +301,14 @@
                                         </div>
                                         <div class="card">
                                             <div class="card-header" id="headingThree">
-                                                <h5 class="mb-0">
-                                                    <button class="btn btn-link collapsed" data-toggle="collapse"
+                                                <div class="mb-0">
+                                                    <button class="btn btn-link collapsed d-flex" data-toggle="collapse"
                                                         data-target="#collapseThree" aria-expanded="false"
                                                         aria-controls="collapseThree">
-                                                        Posso usare questa dashboard da mobile?
+                                                        <h6>Posso usare questa dashboard da mobile?</h6>
+                                                        <i class="bi bi-chevron-down"></i>
                                                     </button>
-                                                </h5>
+                                                </div>
                                             </div>
                                             <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
                                                 data-parent="#accordion">
@@ -365,20 +368,22 @@
 
                             <!-- fourth card -->
                             <div class="card">
-                                <img src="img/stats.jpeg" class="card-img-top" alt="statistics">
-                                <div class="card-body">
-                                    <h5 class="card-title">Utenti attivi</h5>
-                                    <p class="card-text">Lista degli utenti attivi in piattaforma nell'ultimo mese
-                                    </p>
-                                </div>
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item"></li>
-                                    <li class="list-group-item">Gennaio: 1200</li>
-                                    <li class="list-group-item">Febbraio: 800</li>
-                                    <li class="list-group-item">Marzo: 1500</li>
-                                </ul>
-                                <div class="card-body">
-                                    <a href="#" class="card-link">Visualizza report approfondito</a>
+                                <div>
+                                    <img src="img/stats.jpeg" class="card-img-top" alt="statistics">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Utenti attivi</h5>
+                                        <p class="card-text">Lista degli utenti attivi in piattaforma nell'ultimo mese
+                                        </p>
+                                    </div>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item"></li>
+                                        <li class="list-group-item">Gennaio: 1200</li>
+                                        <li class="list-group-item">Febbraio: 800</li>
+                                        <li class="list-group-item">Marzo: 1500</li>
+                                    </ul>
+                                    <div class="card-body">
+                                        <a href="#" class="card-link">Visualizza report approfondito</a>
+                                    </div>
                                 </div>
                             </div>
                             <!-- // fourth card -->

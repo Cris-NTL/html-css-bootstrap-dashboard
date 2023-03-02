@@ -144,6 +144,14 @@ tr td:nth-child(2) {
 tr td:nth-child(3) {
     font-weight: bold;
 }
+
+.mb-0 h6 {
+    color: var(--side);
+    text-align: left;
+    margin-right: 5rem;
+}
+
+
 /* // specific rules */
 
                  
