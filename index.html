@@ -53,7 +53,7 @@
             <!-- sidebar -->
             <aside>
                 <nav class="py-3 d-flex flex-column justify-content-between align-items-center">
-                    <div class="menu d-flex flex-column">
+                    <div class="ms-menu d-flex flex-column">
                         <div class="d-flex flex-row">
                             <i class="bi bi-house-fill mb-3"></i><span class="mx-1 d-none d-md-block">Home</span>
                         </div>
@@ -75,12 +75,16 @@
             <section class="main d-flex flex-column overflow-y-auto">
                 <!-- jumbotron -->
                 <div class="container">
-                    <div class="row jumbo d-flex flex-column p-3">
-                        <div>
+                    <div class="row ms-jumbo d-md-flex flex-row-reverse align-items-center d-sm-flex flex-column py-1">
+                        <div class="col-md-3 col-lg-2">
                             <span>Nuovo Studente</span>
                             <i class="bi bi-plus-square"></i>
                         </div>
-                        <div class="ms-title py-3">
+                        <div class="col-md-3 col-lg-2 py-1">
+                            <span>Studenti online negli utlimi 30 minuti</span><br>
+                            <span>125</span>
+                        </div>
+                        <div class="col-md-6 col-lg-8 ms-title py-1">
                             <div class="d-flex align-items-center">
                                 <h1>Boolean</h1>
                                 <span class="ms-bg">Piano blaze</span>
@@ -92,17 +96,13 @@
                             <span class="ms-bg">Boolean web app</span>
                             <span class="ms-bg">Boolean blog app</span>
                         </div>
-                        <div>
-                            <span>Studenti online negli utlimi 30 minuti</span><br>
-                            <span>125</span>
-                        </div>
                     </div>
                 </div>
                 <!-- jumbotron -->
 
                 <!-- content section -->
                 <div class="container main-content py-3">
-                    <div class="ms-wrap row d-flex flex-column">
+                    <div id="ms-wrap" class="row d-flex flex-column">
                         <div class="col">
 
                             <!-- first card -->
@@ -345,7 +345,7 @@
                                 <div class="card-header">
                                     <h2>To do:</h2>
                                 </div>
-                                <div class="card-body">
+                                <div class="card-body ms-fw-bold">
                                     <!-- input list -->
                                     <ul class="list-group">
                                         <li class="list-group-item">
@@ -374,7 +374,7 @@
 
                             <!-- fourth card -->
                             <div class="card">
-                                <div>
+                                <div class="ms-fw-bold">
                                     <img src="img/stats.jpeg" class="card-img-top" alt="statistics">
                                     <div class="card-body">
                                         <h5 class="card-title">Utenti attivi</h5>
