@@ -6,6 +6,7 @@ img {
 
 /* utility */
 :root {
+    /* colors */
     --default:#ffffff;
     --side: #051E34;
     --jumbo: #1B72E8;
@@ -15,19 +16,19 @@ img {
     --process: #FFC107;
     --failed: #DC3545;
     --btn: #6C757D;
-    
+
+    /* size */
     --as-size: 3.5rem;
     --as-md-size: 6rem;
     --hd-size: 3.5rem;
 }
 /* // utility */
+
 /* common rules */
 body {
     font-family: 'Roboto', sans-serif;
 }
-/* // common rules */
 
-/* specific rules */
 header {
     position: fixed;
     width: 100%;
@@ -35,7 +36,10 @@ header {
     z-index: 1;
     background-color: var(--default);
 }   
+/* // common rules */
 
+/* specific rules */
+/* header */
 header .input-group-text{
     background-color: #E5E5E5;
 }
@@ -43,6 +47,18 @@ header .input-group-text{
 .ms-width {
     width: 100%;
 }
+
+.ms_header-search.form-control:focus{
+    border-color: transparent;
+    box-shadow: none;
+}
+
+.form-control{
+    background-color: #E5E5E5;
+}
+/* // header */
+
+/* side navbar */
 aside {
     background-image: url(/img/sidebar-bg.png);
     background-color: var(--side);
@@ -53,7 +69,9 @@ aside {
 aside nav {
     height: 100%;
 }
+/* // side navbar */
 
+/* main */
 .wrapper {
     width: 100%;
     height: 100%;
@@ -66,12 +84,14 @@ aside nav {
     background-color: var(--mc-bg);
 }
 
+/* jumbotron */
 .ms-jumbo {
     background-color: var(--jumbo);
     color: var(--default);
     height: 15rem;
 }
 
+/* // jumbotron */
 .main {
     width: calc(100% - var(--as-size));
     height: 100%;
@@ -91,15 +111,7 @@ aside nav {
     width: 40px;
 }
 
-.form-control{
-    background-color: #E5E5E5;
-}
-
-.ms_header-search.form-control:focus{
-    border-color: transparent;
-    box-shadow: none;
-}
-
+/* first card */
 tbody th::before {
     content: "";
     background-image: url(/img/class-avatar.jpg);
@@ -147,16 +159,21 @@ tr td:nth-child(2) {
 tr td:nth-child(3) {
     font-weight: bold;
 }
+/* // first card */
 
+/* second card */
 .mb-0 h6 {
     color: var(--side);
     text-align: left;
     margin-right: 5rem;
 }
+/* // second card */
 
+/* fourth card */
 .ms-fw-bold {
     font-weight: bold;
 }
+/* // fourth card */
 /* // specific rules */
 
                  
