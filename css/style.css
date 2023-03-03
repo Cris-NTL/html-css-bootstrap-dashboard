@@ -16,6 +16,7 @@ img {
     --process: #FFC107;
     --failed: #DC3545;
     --btn: #6C757D;
+    --bell: #FF8F00;
 
     /* size */
     --as-size: 3.5rem;
@@ -55,6 +56,14 @@ header .input-group-text{
 
 .form-control{
     background-color: #E5E5E5;
+}
+
+.bi-bell-fill {
+    color: var(--bell);
+}
+
+header a {
+    color: var(--side);
 }
 /* // header */
 
