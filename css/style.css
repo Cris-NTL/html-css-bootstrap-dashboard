@@ -106,6 +106,7 @@ aside nav {
     height: var(--jumbo-sm);
 }
 
+/* registration form */
 #registration-form-container {
     position: fixed;
     top: 0;
@@ -117,25 +118,25 @@ aside nav {
     background-size: cover;
     transition: right 0.5s ease-in-out; 
     z-index: 1;
-  }
+}
 
-  #registration-form-container.show {
+#registration-form-container.show {
     right: 0; 
-  }
+}
 
-  #registration-form {
+#registration-form {
     padding: 20px;
-  }
+}
 
-  #registration-form label {
+  #registration-form label {    
     display: block;
     margin-bottom: 10px;
-  }
+}
 
-  #registration-form button[type="submit"] {
+#registration-form button[type="submit"] {    
     margin-top: 10px;
-  }
-
+}
+/* // registration form */
 /* // jumbotron */
 .main {
     width: calc(100% - var(--as-size));
