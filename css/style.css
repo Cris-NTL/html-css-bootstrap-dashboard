@@ -75,6 +75,9 @@ aside {
     background-color: var(--side);
     color: var(--default);
     width: var(--as-size);
+
+    /* height: 100%; */
+
 }
 
 aside nav {
@@ -89,10 +92,13 @@ aside nav {
 }
 
 .ms-main-body {
+    height: calc(100% - 3.5rem);
     margin-top: 3.5rem;
 }
-.main-content {
+.ms-main-content {
     background-color: var(--mc-bg);
+    
+    height: calc(100% - 3.5rem);
 }
 
 /* jumbotron */
@@ -129,28 +135,28 @@ tbody th::before {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    width: 45px;
-    height: 45px;
-    display: block;
+    width: 35px;
+    height: 35px;
+    display: inline-block;
     margin-right: 10px;
     align-self: center;
 }
 
-#ms-border {
+/* #ms-border {
     border-top: 0;
     vertical-align: middle;
     justify-content: center;
-}
+} */
 
-.ms_done {
+.ms-done {
     background-color: var(--done);
 }
 
-.ms_process {
+.ms-process {
     background-color: var(--process);
 }
 
-.ms_failed {
+.ms-failed {
     background-color: var(--failed);
 }
 
@@ -173,11 +179,6 @@ tr td:nth-child(3) {
 /* // first card */
 
 /* second card */
-.mb-0 h6 {
-    color: var(--side);
-    text-align: left;
-    margin-right: 5rem;
-}
 /* // second card */
 
 /* fourth card */

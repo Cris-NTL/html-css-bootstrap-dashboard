@@ -11,7 +11,9 @@
     <!-- link mediaquery css -->
     <link rel="stylesheet" href="css/mediaquery.css">
     <!-- link bootstrap css -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">    <!-- link google fonts -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- link google fonts -->
     <!-- link icons bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <!-- link google fonts -->
@@ -33,7 +35,7 @@
                     <a href="#"><img class="d-none d-lg-block" src="img/logo.svg" alt="large-boolean-logo"></a>
                 </div>
                 <!-- // logo -->
-                
+
                 <!-- form -->
                 <div class="p-2 col-8">
                     <form class="flex-grow-1" role="search">
@@ -119,9 +121,9 @@
                 <!-- jumbotron -->
 
                 <!-- content section -->
-                <div class="container main-content py-3">
-                    <div id="ms-wrap" class="row d-flex flex-column">
-                        <div class="col">
+                <div class="container-fluid ms-main-content py-3">
+                    <div id="ms-wrap" class="row d-md-flex flex-md-column d-lg-flex flex-lg-row">
+                        <div class="col-12 col-lg-7">
 
                             <!-- first card -->
                             <div class="card my-4">
@@ -133,124 +135,124 @@
                                     <table class="table">
                                         <thead>
                                             <tr>
-                                                <th id="ms-border" scope="col">Nome</th>
-                                                <th id="ms-border" scope="col">Data inizio</th>
-                                                <th id="ms-border" scope="col">ROI</th>
-                                                <th id="ms-border" scope="col">Stato</th>
-                                                <th id="ms-border" scope="col">Azioni</th>
+                                                <th colspan="4" scope="col">Nome</th>
+                                                <th class="d-none d-lg-table-cell" scope="col">Data inizio</th>
+                                                <th class="d-none d-md-table-cell" scope="col">ROI</th>
+                                                <th scope="col">Stato</th>
+                                                <th scope="col">Azioni</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <th id="ms-border" class="d-flex" scope="row">Classe 75</th>
-                                                <td id="ms-border">15 Febbraio 2021</td>
-                                                <td id="ms-border">20%</td>
-                                                <td id="ms-border">
-                                                    <div class="badge ms_done">Done</div>
+                                                <th colspan="4" scope="row">
+                                                    <span>Classe 75</span>
+                                                </th>
+                                                <td class="d-none d-lg-table-cell">15 Febbraio 2021</td>
+                                                <td class="d-none d-md-table-cell">20%</td>
+                                                <td>
+                                                    <div class="badge ms-done">Done</div>
                                                 </td>
                                                 <td id="ms-border" class="d-flex">
-                                                    <button id="btn" class="btn"><i
-                                                            class="bi bi-pencil"></i></i></button>
-                                                    <button id="btn" class="btn"><i
-                                                            class="bi bi-trash-fill"></i></button>
+                                                    <button id="btn" class="btn"><i class="bi bi-pencil"></i></button>
+                                                    <button id="btn" class="btn"><i class="bi bi-trash-fill"></i></button>
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <th id="ms-border" class="d-flex" scope="row">Classe 76</th>
-                                                <td id="ms-border">16 Febbraio 2021</td>
-                                                <td id="ms-border">20%</td>
-                                                <td id="ms-border">
-                                                    <div class="badge ms_done">Done</div>
+                                                <th colspan="4" scope="row">
+                                                    <span>Classe 76</span> 
+                                                </th>
+                                                <td class="d-none d-lg-table-cell">16 Febbraio 2021</td>
+                                                <td class="d-none d-md-table-cell">20%</td>
+                                                <td>
+                                                    <div class="badge ms-done">Done</div>
                                                 </td>
                                                 <td id="ms-border" class="d-flex">
-                                                    <button id="btn" class="btn"><i
-                                                            class="bi bi-pencil"></i></i></button>
-                                                    <button id="btn" class="btn"><i
-                                                            class="bi bi-trash-fill"></i></button>
+                                                    <button id="btn" class="btn"><i class="bi bi-pencil"></i></button>
+                                                    <button id="btn" class="btn"><i class="bi bi-trash-fill"></i></button>
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <th id="ms-border" class="d-flex" scope="row">Classe 77</th>
-                                                <td id="ms-border">17 Febbraio 2021</td>
-                                                <td id="ms-border">20%</td>
-                                                <td id="ms-border">
-                                                    <div class="badge ms_process">Process</div>
+                                                <th colspan="4" scope="row">
+                                                    <span>Classe 77</span> 
+                                                </th>
+                                                <td class="d-none d-lg-table-cell">17 Febbraio 2021</td>
+                                                <td class="d-none d-md-table-cell">20%</td>
+                                                <td>
+                                                    <div class="badge ms-process">Process</div>
                                                 </td>
                                                 <td id="ms-border" class="d-flex">
-                                                    <button id="btn" class="btn"><i
-                                                            class="bi bi-pencil"></i></i></button>
-                                                    <button id="btn" class="btn"><i
-                                                            class="bi bi-trash-fill"></i></button>
+                                                    <button id="btn" class="btn"><i class="bi bi-pencil"></i></button>
+                                                    <button id="btn" class="btn"><i class="bi bi-trash-fill"></i></button>
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <th id="ms-border" class="d-flex" scope="row">Classe 78</th>
-                                                <td id="ms-border">18 Febbraio 2021</td>
-                                                <td id="ms-border">20%</td>
-                                                <td id="ms-border">
-                                                    <div class="badge ms_done">Done</div>
+                                                <th colspan="4" scope="row">
+                                                    <span>Classe 78</span> 
+                                                </th>
+                                                <td class="d-none d-lg-table-cell">18 Febbraio 2021</td>
+                                                <td class="d-none d-md-table-cell">20%</td>
+                                                <td>
+                                                    <div class="badge ms-done">Done</div>
                                                 </td>
                                                 <td id="ms-border" class="d-flex">
-                                                    <button id="btn" class="btn"><i
-                                                            class="bi bi-pencil"></i></i></button>
-                                                    <button id="btn" class="btn"><i
-                                                            class="bi bi-trash-fill"></i></button>
+                                                    <button id="btn" class="btn"><i class="bi bi-pencil"></i></button>
+                                                    <button id="btn" class="btn"><i class="bi bi-trash-fill"></i></button>
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <th id="ms-border" class="d-flex" scope="row">Classe 79</th>
-                                                <td id="ms-border">19 Febbraio 2021</td>
-                                                <td id="ms-border">20%</td>
-                                                <td id="ms-border">
-                                                    <div class="badge ms_failed">Failed</div>
+                                                <th colspan="4" scope="row">
+                                                    <span>Classe 79</span> 
+                                                </th>
+                                                <td class="d-none d-lg-table-cell">19 Febbraio 2021</td>
+                                                <td class="d-none d-md-table-cell">20%</td>
+                                                <td>
+                                                    <div class="badge ms-failed">Failed</div>
                                                 </td>
                                                 <td id="ms-border" class="d-flex">
-                                                    <button id="btn" class="btn"><i
-                                                            class="bi bi-pencil"></i></i></button>
-                                                    <button id="btn" class="btn"><i
-                                                            class="bi bi-trash-fill"></i></button>
+                                                    <button id="btn" class="btn"><i class="bi bi-pencil"></i></button>
+                                                    <button id="btn" class="btn"><i class="bi bi-trash-fill"></i></button>
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <th id="ms-border" class="d-flex" scope="row">Classe 80</th>
-                                                <td id="ms-border">20 Febbraio 2021</td>
-                                                <td id="ms-border">20%</td>
-                                                <td id="ms-border">
-                                                    <div class="badge ms_done">Done</div>
+                                                <th colspan="4" scope="row">
+                                                    <span>Classe 80</span> 
+                                                </th>
+                                                <td class="d-none d-lg-table-cell">20 Febbraio 2021</td>
+                                                <td class="d-none d-md-table-cell">20%</td>
+                                                <td>
+                                                    <div class="badge ms-done">Done</div>
                                                 </td>
                                                 <td id="ms-border" class="d-flex">
-                                                    <button id="btn" class="btn"><i
-                                                            class="bi bi-pencil"></i></i></button>
-                                                    <button id="btn" class="btn"><i
-                                                            class="bi bi-trash-fill"></i></button>
+                                                    <button id="btn" class="btn"><i class="bi bi-pencil"></i></button>
+                                                    <button id="btn" class="btn"><i class="bi bi-trash-fill"></i></button>
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <th id="ms-border" class="d-flex" scope="row">Classe 81</th>
-                                                <td id="ms-border">21 Febbraio 2021</td>
-                                                <td id="ms-border">20%</td>
-                                                <td id="ms-border">
-                                                    <div class="badge ms_failed">Failed</div>
+                                                <th colspan="4" scope="row">
+                                                    <span>Classe 81</span> 
+                                                </th>
+                                                <td class="d-none d-lg-table-cell">21 Febbraio 2021</td>
+                                                <td class="d-none d-md-table-cell">20%</td>
+                                                <td>
+                                                    <div class="badge ms-failed">Failed</div>
                                                 </td>
                                                 <td id="ms-border" class="d-flex">
-                                                    <button id="btn" class="btn"><i
-                                                            class="bi bi-pencil"></i></i></button>
-                                                    <button id="btn" class="btn"><i
-                                                            class="bi bi-trash-fill"></i></button>
+                                                    <button id="btn" class="btn"><i class="bi bi-pencil"></i></button>
+                                                    <button id="btn" class="btn"><i class="bi bi-trash-fill"></i></button>
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <th id="ms-border" class="d-flex" scope="row">Classe 82</th>
-                                                <td id="ms-border">22 Febbraio 2021</td>
-                                                <td id="ms-border">20%</td>
-                                                <td id="ms-border">
-                                                    <div class="badge ms_done">Done</div>
+                                                <th colspan="4" scope="row">
+                                                    <span>Classe 82</span> 
+                                                </th>
+                                                <td class="d-none d-lg-table-cell">22 Febbraio 2021</td>
+                                                <td class="d-none d-md-table-cell">20%</td>
+                                                <td>
+                                                    <div class="badge ms-done">Done</div>
                                                 </td>
                                                 <td id="ms-border" class="d-flex">
-                                                    <button id="btn" class="btn"><i
-                                                            class="bi bi-pencil"></i></i></button>
-                                                    <button id="btn" class="btn"><i
-                                                            class="bi bi-trash-fill"></i></button>
+                                                    <button id="btn" class="btn"><i class="bi bi-pencil"></i></button>
+                                                    <button id="btn" class="btn"><i class="bi bi-trash-fill"></i></button>
                                                 </td>
                                             </tr>
                                         </tbody>
@@ -267,88 +269,70 @@
                                 </div>
                                 <div class="card-body">
                                     <!-- accordion -->
-                                    <div id="accordion">
-
-                                        <div class="card">
-                                            <div class="card-header" id="headingOne">
-                                                <div class="mb-0">
-                                                    <button class="btn btn-link d-flex" data-toggle="collapse"
-                                                        data-target="#collapseOne" aria-expanded="true"
-                                                        aria-controls="collapseOne">
-                                                        <h6>Come aggiungere un nuovo studente?</h6>
-                                                        <i class="bi bi-chevron-down"></i>
-                                                    </button>
-                                                </div>
-                                            </div>
-                                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
-                                                data-parent="#accordion">
-                                                <div class="card-body">
-                                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
-                                                    terry richardson ad squid. 3 wolf moon officia aute, non cupidatat
-                                                    skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
-                                                    Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
-                                                    single-origin coffee nulla assumenda shoreditch et. Nihil anim
-                                                    keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
-                                                    sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
-                                                    occaecat craft beer farm-to-table, raw denim aesthetic synth
-                                                    nesciunt you probably haven't heard of them accusamus labore
-                                                    sustainable VHS.
+                                    <div class="accordion" id="accordionExample">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="headingOne">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                                    aria-expanded="true" aria-controls="collapseOne">
+                                                    Come aggiungere un nuovo studente?
+                                                </button>
+                                            </h2>
+                                            <div id="collapseOne" class="accordion-collapse collapse"
+                                                aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                    <strong>This is the first item's accordion body.</strong> It is
+                                                    shown by default, until the collapse plugin adds the appropriate
+                                                    classes that we use to style each element. These classes control the
+                                                    overall appearance, as well as the showing and hiding via CSS
+                                                    transitions. You can modify any of this with custom CSS or
+                                                    overriding our default variables. It's also worth noting that just
+                                                    about any HTML can go within the <code>.accordion-body</code>,
+                                                    though the transition does limit overflow.
                                                 </div>
                                             </div>
                                         </div>
-
-                                        <div class="card">
-                                            <div class="card-header" id="headingTwo">
-                                                <div class="mb-0">
-                                                    <button class="btn btn-link collapsed d-flex" data-toggle="collapse"
-                                                        data-target="#collapseTwo" aria-expanded="false"
-                                                        aria-controls="collapseTwo">
-                                                        <h6>Come posso accedere alle informazioni del mio account?</h6>
-                                                        <i class="bi bi-chevron-down"></i>
-                                                    </button>
-                                                </div>
-                                            </div>
-                                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
-                                                data-parent="#accordion">
-                                                <div class="card-body">
-                                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
-                                                    terry richardson ad squid. 3 wolf moon officia aute, non cupidatat
-                                                    skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
-                                                    Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
-                                                    single-origin coffee nulla assumenda shoreditch et. Nihil anim
-                                                    keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
-                                                    sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
-                                                    occaecat craft beer farm-to-table, raw denim aesthetic synth
-                                                    nesciunt you probably haven't heard of them accusamus labore
-                                                    sustainable VHS.
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="headingTwo">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                                    aria-expanded="false" aria-controls="collapseTwo">
+                                                    Come posso accedere alle informazioni del mio account?
+                                                </button>
+                                            </h2>
+                                            <div id="collapseTwo" class="accordion-collapse collapse"
+                                                aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                    <strong>This is the second item's accordion body.</strong> It is
+                                                    hidden by default, until the collapse plugin adds the appropriate
+                                                    classes that we use to style each element. These classes control the
+                                                    overall appearance, as well as the showing and hiding via CSS
+                                                    transitions. You can modify any of this with custom CSS or
+                                                    overriding our default variables. It's also worth noting that just
+                                                    about any HTML can go within the <code>.accordion-body</code>,
+                                                    though the transition does limit overflow.
                                                 </div>
                                             </div>
                                         </div>
-
-                                        <div class="card">
-                                            <div class="card-header" id="headingThree">
-                                                <div class="mb-0">
-                                                    <button class="btn btn-link collapsed d-flex" data-toggle="collapse"
-                                                        data-target="#collapseThree" aria-expanded="false"
-                                                        aria-controls="collapseThree">
-                                                        <h6>Posso usare questa dashboard da mobile?</h6>
-                                                        <i class="bi bi-chevron-down"></i>
-                                                    </button>
-                                                </div>
-                                            </div>
-                                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
-                                                data-parent="#accordion">
-                                                <div class="card-body">
-                                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
-                                                    terry richardson ad squid. 3 wolf moon officia aute, non cupidatat
-                                                    skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
-                                                    Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
-                                                    single-origin coffee nulla assumenda shoreditch et. Nihil anim
-                                                    keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
-                                                    sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
-                                                    occaecat craft beer farm-to-table, raw denim aesthetic synth
-                                                    nesciunt you probably haven't heard of them accusamus labore
-                                                    sustainable VHS.
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="headingThree">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                                    aria-expanded="false" aria-controls="collapseThree">
+                                                    Posso usare questa dashboard da mobile?
+                                                </button>
+                                            </h2>
+                                            <div id="collapseThree" class="accordion-collapse collapse"
+                                                aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                    <strong>This is the third item's accordion body.</strong> It is
+                                                    hidden by default, until the collapse plugin adds the appropriate
+                                                    classes that we use to style each element. These classes control the
+                                                    overall appearance, as well as the showing and hiding via CSS
+                                                    transitions. You can modify any of this with custom CSS or
+                                                    overriding our default variables. It's also worth noting that just
+                                                    about any HTML can go within the <code>.accordion-body</code>,
+                                                    though the transition does limit overflow.
                                                 </div>
                                             </div>
                                         </div>
@@ -359,7 +343,7 @@
                             <!-- // second card -->
                         </div>
 
-                        <div class="col">
+                        <div class="col-12 col-lg-5">
                             <!-- third card -->
                             <div class="card my-4">
                                 <div class="card-header">
@@ -423,7 +407,9 @@
         <!-- // central body -->
     </div>
     <!-- javascript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>    <!-- // javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script> <!-- // javascript -->
 </body>
 
 </html>

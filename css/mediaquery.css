@@ -13,9 +13,6 @@
 
 /* md => 768px */
 @media screen and (min-width: 768px) {
-    .mb-0 h6 {
-        margin-right: 20rem;
-    }
 
     #ms-wrap {
         display: flex;
@@ -33,16 +30,13 @@
 
 /* lg => 992px */
 @media screen and (min-width: 992px) {
+
     .p-2 img {
         width: 100px;
     }
 
-    .mb-0 h6 {
-        margin-right: 35rem;
-    }
-
     .ms-jumbo {
         height: var(--jumbo-lg);
-       font-size: 0.9rem;         
+        font-size: 0.9rem;         
     }
 }
