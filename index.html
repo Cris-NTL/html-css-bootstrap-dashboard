@@ -22,6 +22,10 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
+    <!-- link js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -99,14 +103,34 @@
                         <!-- new student + registration form -->
                         <div class="col-md-3 col-lg-2">
                             <span>Nuovo Studente</span>
-                            <button type="button" class="btn btn-primary p-0" id="registration-button"><i class="bi bi-plus-square fs-5"></i></button>
+                            <button type="button" class="btn btn-primary p-0" id="registration-button"><i
+                                    class="bi bi-plus-square fs-5"></i></button>
 
                             <!-- registration form -->
-                                
+                            <div id="registration-form-container">
+                                <form id="registration-form">
+                                    <div class="mb-3">
+                                        <label for="name" class="form-label fw-bold">Name</label>
+                                        <input type="text" class="form-control" id="name" name="name">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="email" class="form-label fw-bold">Email</label>
+                                        <input type="email" class="form-control" id="email" name="email">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="password" class="form-label fw-bold">Password</label>
+                                        <input type="password" class="form-control" id="password" name="password">
+                                    </div>
+                                    <div class="d-flex flex-column">
+                                        <button type="submit" class="btn btn-primary mb-3">Submit</button>
+                                        <button type="button" class="btn btn-primary" id="close-button">Close</button>
+                                    </div>
+                                </form>
+                            </div>
                             <!-- // registration form -->
                         </div>
                         <!-- // new student + registration form -->
-                        
+
                         <!-- online -->
                         <div class="col-md-3 col-lg-2 py-1">
                             <span>Studenti online negli utlimi 30 minuti</span><br>
@@ -130,7 +154,7 @@
                         <!-- // title -->
                     </div>
                 </div>
-                <!-- jumbotron -->
+                <!-- // jumbotron -->
 
                 <!-- content section -->
                 <div class="container-fluid ms-main-content py-3">
@@ -166,12 +190,13 @@
                                                 </td>
                                                 <td id="ms-border" class="d-flex">
                                                     <button id="btn" class="btn"><i class="bi bi-pencil"></i></button>
-                                                    <button id="btn" class="btn"><i class="bi bi-trash-fill"></i></button>
+                                                    <button id="btn" class="btn"><i
+                                                            class="bi bi-trash-fill"></i></button>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <th colspan="4" scope="row">
-                                                    <span>Classe 76</span> 
+                                                    <span>Classe 76</span>
                                                 </th>
                                                 <td class="d-none d-lg-table-cell">16 Febbraio 2021</td>
                                                 <td class="d-none d-md-table-cell">20%</td>
@@ -180,12 +205,13 @@
                                                 </td>
                                                 <td id="ms-border" class="d-flex">
                                                     <button id="btn" class="btn"><i class="bi bi-pencil"></i></button>
-                                                    <button id="btn" class="btn"><i class="bi bi-trash-fill"></i></button>
+                                                    <button id="btn" class="btn"><i
+                                                            class="bi bi-trash-fill"></i></button>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <th colspan="4" scope="row">
-                                                    <span>Classe 77</span> 
+                                                    <span>Classe 77</span>
                                                 </th>
                                                 <td class="d-none d-lg-table-cell">17 Febbraio 2021</td>
                                                 <td class="d-none d-md-table-cell">20%</td>
@@ -194,12 +220,13 @@
                                                 </td>
                                                 <td id="ms-border" class="d-flex">
                                                     <button id="btn" class="btn"><i class="bi bi-pencil"></i></button>
-                                                    <button id="btn" class="btn"><i class="bi bi-trash-fill"></i></button>
+                                                    <button id="btn" class="btn"><i
+                                                            class="bi bi-trash-fill"></i></button>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <th colspan="4" scope="row">
-                                                    <span>Classe 78</span> 
+                                                    <span>Classe 78</span>
                                                 </th>
                                                 <td class="d-none d-lg-table-cell">18 Febbraio 2021</td>
                                                 <td class="d-none d-md-table-cell">20%</td>
@@ -208,12 +235,13 @@
                                                 </td>
                                                 <td id="ms-border" class="d-flex">
                                                     <button id="btn" class="btn"><i class="bi bi-pencil"></i></button>
-                                                    <button id="btn" class="btn"><i class="bi bi-trash-fill"></i></button>
+                                                    <button id="btn" class="btn"><i
+                                                            class="bi bi-trash-fill"></i></button>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <th colspan="4" scope="row">
-                                                    <span>Classe 79</span> 
+                                                    <span>Classe 79</span>
                                                 </th>
                                                 <td class="d-none d-lg-table-cell">19 Febbraio 2021</td>
                                                 <td class="d-none d-md-table-cell">20%</td>
@@ -222,12 +250,13 @@
                                                 </td>
                                                 <td id="ms-border" class="d-flex">
                                                     <button id="btn" class="btn"><i class="bi bi-pencil"></i></button>
-                                                    <button id="btn" class="btn"><i class="bi bi-trash-fill"></i></button>
+                                                    <button id="btn" class="btn"><i
+                                                            class="bi bi-trash-fill"></i></button>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <th colspan="4" scope="row">
-                                                    <span>Classe 80</span> 
+                                                    <span>Classe 80</span>
                                                 </th>
                                                 <td class="d-none d-lg-table-cell">20 Febbraio 2021</td>
                                                 <td class="d-none d-md-table-cell">20%</td>
@@ -236,12 +265,13 @@
                                                 </td>
                                                 <td id="ms-border" class="d-flex">
                                                     <button id="btn" class="btn"><i class="bi bi-pencil"></i></button>
-                                                    <button id="btn" class="btn"><i class="bi bi-trash-fill"></i></button>
+                                                    <button id="btn" class="btn"><i
+                                                            class="bi bi-trash-fill"></i></button>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <th colspan="4" scope="row">
-                                                    <span>Classe 81</span> 
+                                                    <span>Classe 81</span>
                                                 </th>
                                                 <td class="d-none d-lg-table-cell">21 Febbraio 2021</td>
                                                 <td class="d-none d-md-table-cell">20%</td>
@@ -250,12 +280,13 @@
                                                 </td>
                                                 <td id="ms-border" class="d-flex">
                                                     <button id="btn" class="btn"><i class="bi bi-pencil"></i></button>
-                                                    <button id="btn" class="btn"><i class="bi bi-trash-fill"></i></button>
+                                                    <button id="btn" class="btn"><i
+                                                            class="bi bi-trash-fill"></i></button>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <th colspan="4" scope="row">
-                                                    <span>Classe 82</span> 
+                                                    <span>Classe 82</span>
                                                 </th>
                                                 <td class="d-none d-lg-table-cell">22 Febbraio 2021</td>
                                                 <td class="d-none d-md-table-cell">20%</td>
@@ -264,7 +295,8 @@
                                                 </td>
                                                 <td id="ms-border" class="d-flex">
                                                     <button id="btn" class="btn"><i class="bi bi-pencil"></i></button>
-                                                    <button id="btn" class="btn"><i class="bi bi-trash-fill"></i></button>
+                                                    <button id="btn" class="btn"><i
+                                                            class="bi bi-trash-fill"></i></button>
                                                 </td>
                                             </tr>
                                         </tbody>
@@ -394,7 +426,8 @@
                                     <img src="img/stats.jpeg" class="card-img-top" alt="statistics">
                                     <div class="card-body">
                                         <h5 class="card-title">Utenti attivi</h5>
-                                        <p class="card-text">Lista degli utenti attivi in piattaforma nell'ultimo mese</p>
+                                        <p class="card-text">Lista degli utenti attivi in piattaforma nell'ultimo mese
+                                        </p>
                                     </div>
                                     <ul class="list-group list-group-flush">
                                         <li class="list-group-item"></li>
@@ -418,9 +451,33 @@
         <!-- // central body -->
     </div>
     <!-- javascript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-        crossorigin="anonymous"></script> <!-- // javascript -->
+    <script>
+        const registrationFormContainer = document.getElementById('registration-form-container');
+        const registrationButton = document.getElementById('registration-button');
+        const closeButton = document.getElementById('close-button');
+
+        // Show the registration form when the registration button is clicked
+        registrationButton.addEventListener('click', function () {
+            registrationFormContainer.classList.add('show');
+        });
+
+        // Hide the registration form when the close button is clicked
+        closeButton.addEventListener('click', function () {
+            registrationFormContainer.classList.remove('show');
+        });
+
+        // Submit the registration form when the submit button is clicked
+        const registrationForm = document.getElementById('registration-form');
+        registrationForm.addEventListener('submit', function (event) {
+            event.preventDefault();
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            // Do something with the form data, like send it to a server or display it on the page
+            console.log(name, email, password);
+        });
+    </script>
+    <!-- // javascript -->
 </body>
 
 </html>
