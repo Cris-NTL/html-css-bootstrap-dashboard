@@ -17,6 +17,7 @@ img {
     --failed: #DC3545;
     --btn: #6C757D;
     --bell: #FF8F00;
+    --ms-bg-hov: #051E34;
 
     /* size */
     --as-size: 3.5rem;
@@ -75,9 +76,6 @@ aside {
     background-color: var(--side);
     color: var(--default);
     width: var(--as-size);
-
-    /* height: 100%; */
-
 }
 
 aside nav {
@@ -88,7 +86,7 @@ aside nav {
 /* main */
 .ms-wrapper {
     width: 100%;
-    height: 100%;
+    height: 100vh;
 }
 
 .ms-main-body {
@@ -120,6 +118,11 @@ aside nav {
     border-radius: 25px 25px;
 }
 
+.ms-bg:hover {
+    cursor: pointer;
+    background-color: var(--ms-bg-hov); 
+}
+
 .ms-title *:not(:last-child) {
     margin-right: 0.5rem;
 }
@@ -141,12 +144,6 @@ tbody th::before {
     margin-right: 10px;
     align-self: center;
 }
-
-/* #ms-border {
-    border-top: 0;
-    vertical-align: middle;
-    justify-content: center;
-} */
 
 .ms-done {
     background-color: var(--done);
