@@ -25,6 +25,10 @@
     aside {
         width: var(--as-md-size);
     }
+
+    .ms-jumbo {
+        height: var(--jumbo-lg);
+    }
 }
 
 /* lg => 992px */
@@ -38,6 +42,7 @@
     }
 
     .ms-jumbo {
+        height: var(--jumbo-lg);
        font-size: 0.9rem;         
     }
 }
